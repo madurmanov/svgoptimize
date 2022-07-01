@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import svgo from 'svgo';
 
+fs.rmSync('./output/', { recursive: true, force: true });
 fs.mkdirSync('./output/');
 
 const optimize = async () => {
